@@ -1,0 +1,30 @@
+<div class="container">
+  <h2 class="panel panel-title bg-primary txt-align-center">
+    Welcome to ShopStop!
+  </h2>
+
+
+  <ul class="list-group list-inline">
+  <li class="list-group-item"><button class="btn btn-primary btn-sm">Add New Item</button></li>
+  <li class="list-group-item"><button class="btn btn-danger btn-sm">Delete Item</button></li></ul>
+
+ 
+      <ul >    
+
+      <li *ngFor="let item of items">
+        <div>{{this.item.itemName}}</div>
+      <div>{{this.item.itemPrice}}</div></li>
+      </ul>
+
+  <table>
+    <tr *ngFor="let item of items">
+      <td>{{this.item.itemName}}</td>
+      <td>{{this.item.itemPrice}}</td>
+    </tr>
+
+  </table>
+
+
+  <div>FirstName {{this.firstName}}</div>
+</div>
+    
